@@ -37,10 +37,10 @@ function App() {
 
   return (
     <div className="app">
-      <AuthContext.Provider value={{ isAuthenticated, setIsAuthenticated }}>
-        <Nav />
-        <Header />
-        <Routes>
+      {/* <AuthContext.Provider value={{ isAuthenticated, setIsAuthenticated }}> */}
+      <Nav />
+      <Header />
+      {/* <Routes>
           <Route path="/" element={<Navigate to="/signin" />} />
           <Route
             path="/signin"
@@ -50,9 +50,9 @@ function App() {
           {isAuthenticated && (
             <>
               <Route path="movies/:id" element={<Movies />} />
-              <Route path="mylist/:id" element={<ShowDetailsPage />} />
-              <Route path="mylist" element={<MyList />} />
-              <Route
+              <Route path="mylist/:id" element={<ShowDetailsPage />} /> */}
+      {/* <Route path="mylist" element={<MyList />} /> */}
+      {/* <Route
                 path="tvshows/popular"
                 element={
                   <PopularTvShowsPage
@@ -69,8 +69,8 @@ function App() {
                     fetchUrl={requests.topRated}
                   />
                 }
-              />
-              <Route
+              /> */}
+      {/* <Route
                 path="tvshows/airingtoday"
                 element={
                   <AiringTodayPage
@@ -85,7 +85,7 @@ function App() {
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
         <Footer />
-      </AuthContext.Provider>
+      </AuthContext.Provider> */}
     </div>
   );
 }
